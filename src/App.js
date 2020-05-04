@@ -12,6 +12,7 @@ class App extends Component {
     loading: false,
     alert: null,
   };
+<<<<<<< HEAD
   async componentDidMount() {
     this.setState({
       loading: true,
@@ -24,6 +25,20 @@ class App extends Component {
       loading: false,
     });
   }
+=======
+  // async componentDidMount() {
+  //   this.setState({
+  //     loading: true,
+  //   });
+  //   const res = await axios.get(
+  //     `https://api.github.com/users?client_id=${process.env.REACT_APP_GIT_CLIENT_ID}&client_secret=${process.env.REACT_APP_GIT_SECRET}`
+  //   );
+  //   this.setState({
+  //     users: res.data,
+  //     loading: false,
+  //   });
+  // }
+>>>>>>> 9197bd888f1e31628b35f12be9539d423471ec27
   //Git Search User...
 
   searchUser = async (text) => {
